@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>MegaPaste</title>
+	
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+	<h3>Type the text to your page below and insert images</h3>
+	<div id="main">
+		<form action="{{ uploadLink }}" method="post" enctype="multipart/form-data">
+			Title: <input type="text" name="title">
+			<br>
+			Content: <textarea name="content" rows="20" cols="60"></textarea><br>
+			
+			[img1]
+			<input type="file" name="img1">
+			Display Thumbnail: <input type="checkbox" name="thumb1" value="1"><br>
+			
+			[img2]
+			<input type="file" name="img2">
+			Display Thumbnail: <input type="checkbox" name="thumb2" value="1"><br>
+			
+			[img3]
+			<input type="file" name="img3">
+			Display Thumbnail: <input type="checkbox" name="thumb3" value="1"><br>
+			
+			<label title="Paste will not show in 'Recent' list">Make Paste Private <input name="private" type="checkbox"></label>
+			<input type="submit" name="submit">
+		</form>
+		
+		<a href="recent">View recent pastes</a>
+	</div>
+</body>
+</html>

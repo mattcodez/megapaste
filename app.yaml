@@ -1,0 +1,27 @@
+application: megapaste
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /
+  script: index.py
+  
+- url: /index\.html
+  script: index.py
+  
+- url: /main\.css
+  static_files: css/main.css
+  upload: /(.*)
+  
+- url: /new
+  script: post.py
+  
+- url: /recent
+  script: recent.py
+  
+- url: /view
+  script: view.py
+  
+- url: /imgview
+  script: imgview.py

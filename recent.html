@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Recent Posts</title>
+	
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+	<table>
+	{% for paste in pastes %}
+		<tr>
+			<td>
+				<a href="view?id={{ paste.key }}">{{ paste.title|escape }}</a>
+			</td>
+			<td>{{ paste.date }}</td>
+		</tr>
+	{% endfor %}
+	</table>
+</body>
+</html>

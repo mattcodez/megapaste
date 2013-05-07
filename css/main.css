@@ -1,0 +1,17 @@
+BODY
+{
+	background-color	:	#00BCE4;
+}
+
+TEXTAREA
+{
+	scroll	:	auto;
+}
+
+#main
+{
+	background-color	:	#008B8B;
+	padding				:	5px;
+	float				:	left;
+	width				:	80%;
+}
